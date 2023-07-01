@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   text-rendering: optimizeSpeed;
-  background: url(/images/bgc-01-01.png);
+  background: url(../images/bgc-01-01.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-repeat: no-repeat;
