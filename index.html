@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BeeXSwap</title>
+    <script src="https://kit.fontawesome.com/82fac282cd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="images/BeeXSwap.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <div id="container">
+        <img id="cursor-image" src="/images/bee-cursor-01.png" alt="Cursor Image">
+      </div>    
+
+
+      <!--------------------------------------------------- HEADER ------------------------------------------------->
+    <header>
+        
+        <!--------------------------------------------------- Navbar ------------------------------------------------->
+
+        <nav class="navbar navbar-expand-lg  d-none d-lg-flex ">
+        <div class="container ">
+          <a class="navbar-brand " href="#"><img src="images/BeeXSwap.png" style="width: 90px;"></a>
+          <h5 >
+            Bee Exchange</h5>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+            <ul class="navbar-nav  mb-2 mb-lg-0 gap-4 ms-auto" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style=" color: #89570a" href="#">IDO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"style=" color: #89570a" href="#aboutme">Enter App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"style=" color: #89570a" href="#service1">Docs</a>
+              </li>
+             
+          </div>        
+        
+        </div>
+     
+      </nav>
+
+      <!--------------------------------------------------- end-Navbar ------------------------------------------------->
+
+      
+      <!--------------------------------------------------- Hero-Content ------------------------------------------------->
+
+        <Section class="hero-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col hero-content">
+                        <div class="col-6 desc-content">
+                            <h1>Bee Exchange is the world’s first innovative DEX on the BRC-20 protocol.</h1>
+                            <p>The Brc-20 Dex Exchange is an innovative decentralized exchange built on the brc-20 protocol. Fractional ordinals emerged as a response to the need for increased 
+                                accessibilty and liquidity in high-value assets.</p>
+                                <div>
+                                <button class="btn-1" download >
+                                Open DEX
+                                </button>
+                                <button class="btn-2 ms-4" download >
+                                    Open DEX
+                                    </button>
+                                </div>
+                        </div>
+                        <div class="col-6 bee">
+                                <img src="/images/BEE-01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Section>
+            <!---------------------------------------------------end-Hero-Content ------------------------------------------------->
+    
+    
+        </header >
+
+        <!--------------------------------------------------- end-Header ------------------------------------------------->
+
+        <!--------------------------------------------------- Animated Background ------------------------------------------------->
+        <section class="animated-background"> 
+            <div class="box">
+                <div>
+                    <img style="width: 100px; opacity: 60%;" src="/images/bitcoin.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/ethereum.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/bnb.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/bitcoin.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/bnb.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/bnb.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/bitcoin.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/ethereum.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/bitcoin.png" alt="">
+            </div>
+            <div>
+                <img style="width: 100px; opacity: 70%;" src="/images/ethereum.png" alt="">
+            </div>
+            <div class="bee1">
+                <img style="width: 100px; opacity: 80%;" src="/images/BEE-left-01.png" alt="">
+            </div>
+            <div class="bee1">
+                <img style="width: 100px; opacity: 80%;" src="/images/BEE-01.png" alt="">
+            </div>
+            <div class="bee1">
+                <img style="width: 100px; opacity: 80%;" src="/images/BEE-left-01.png" alt="">
+            </div>
+            </div>
+            
+        </section>
+         <!--------------------------------------------------- end Animated-Bckground ------------------------------------------------->
+      
+
+         <script>document.addEventListener('DOMContentLoaded', function() {
+            var cursorImage = document.getElementById('cursor-image');
+          
+            document.addEventListener('mousemove', function(e) {
+              var x = e.clientX;
+              var y = e.clientY;
+          
+              cursorImage.style.display = 'block';
+              cursorImage.style.left = x + 'px';
+              cursorImage.style.top = y + 'px';
+            });
+          });</script>
+</body>
+</html>

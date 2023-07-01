@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  height: 100vh;
+  text-rendering: optimizeSpeed;
+  background: url(/images/bgc-01-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+
+
+#cursor-image {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: 150px; /* Adjust size as needed */
+    margin-left: -1.5rem;
+    margin-top: -1rem;
+    pointer-events: none; /* Allow interaction with elements below */
+    overflow: hidden;
+  }
+
+  
+
+/************************************************ navbar *****************************************/
+
+.navbar-nav {
+  display: flex;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.nav-link {
+  font-size: 1.25em;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+.navbar-nav li a {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.navbar h5 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #89570a;
+  font-family: "Oswald", sans-serif;
+}
+
+/************************ end navbar ********************************/
+header {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/************************ Hero Content ********************************/
+.hero-page {
+  display: flex;
+  align-items: center;
+
+  height: 88%;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.desc-content h1 {
+  background: -webkit-linear-gradient( #774f00,#d88c00, #774f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-size: 55px;
+  font-weight: 800;
+}
+.desc-content p {
+  color: #152026;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.desc-content button {
+  background-color: #ffa500; /* Green */
+  border: none;
+  border-radius: 15px;
+  color: #152026;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.desc-content button:nth-child(2) {
+  color: #152026;
+  background-color: transparent;
+  border: 1px solid #ffa500;
+  transition: 0.5s;
+}
+.desc-content .btn-2:hover {
+  color: #152026;
+  background-image: linear-gradient(
+    to right bottom,
+    #fdbc04,
+    #fda40b,
+    #fa8c19,
+    #f57424,
+    #ec5c2e
+  );
+  transition: 0.5s;
+}
+.desc-content .btn-1:hover {
+  color: #152026;
+  background-image: linear-gradient(
+    to right bottom,
+    #fdbc04,
+    #fda40b,
+    #fa8c19,
+    #f57424,
+    #ec5c2e
+  );
+  transition: 0.5s;
+}
+.bee{
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+.bee img{
+    width: 100%;
+    margin-top: -27rem;
+    position: absolute;
+    animation: moveUpDown 3s infinite;
+}
+@keyframes moveUpDown {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 70px; /* Adjust the distance the image moves */
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+/************************ end-Hero-Content ********************************/
+
+/************************ Animated Background ********************************/
+
+.box img {
+  position: absolute;
+}
+.box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: -99;
+}
+.box div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 26%;
+  left: 89%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 80%;
+  left: 90%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 65%;
+  left: 75%;
+  animation: animate 7s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 70%;
+  left: 33%;
+  animation: animate 8s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(9) {
+  top: 23%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(10) {
+  top: 35%;
+  left: 7%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(11) {
+   margin-top: 100px;
+    left: 50%;
+    position: absolute;
+    animation: moveUpDown 6s infinite;
+  }
+  .box div:nth-child(12) {
+    margin-top: 500px;
+     left: 10%;
+     position: absolute;
+     animation: moveUpDown 2s infinite;
+   }
+   .box div:nth-child(13) {
+    margin-top: 45rem;
+     left: 40%;
+     position: absolute;
+     animation: moveUpDown 5s infinite;
+   }
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(50deg);
+  }
+  100% {
+    transform: scale(1.6) translateY(-250px) rotate(360deg);
+    opacity: 0;
+  }
+}
