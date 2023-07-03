@@ -3,30 +3,93 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Mukta", sans-serif;
+  
 }
 
 body {
   height: 100vh;
   text-rendering: optimizeSpeed;
- 
+
   
 }
 
 
 
-#cursor-image {
+/* #cursor-image {
     position: absolute;
     z-index: 999;
     display: none;
-    width: 90px; /* Adjust size as needed */
+    width: 90px;
     margin-left: -1.5rem;
     margin-top: -1rem;
-    pointer-events: none; /* Allow interaction with elements below */
+    pointer-events: none;
     overflow: hidden;
-  }
+  } */
 
   
 
+  .navbar2{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #ffa500;
+    transition: 0.4s;
+    z-index: 999;
+  }
+  .navbar2 .navbar-nav{
+   display: block;
+    text-align: left;
+    margin-left: 15%;
+  }
+  
+  .nav-link{
+    font-size: 1.25em;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  
+  
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  
+  /* for navbar */
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  
+  /* for main section */
+  
+  .active-cont {
+    margin-left: 250px;
+  }
+  
+  #menu-btn {
+    position:fixed;
+    top: 0%;
+    background-color: #ffa500;
+    color: #fff;
+    z-index: 999;
+  }
+  #menu-btn i{
+    font-size: 25px;
+    color: #ffffff;
+  }
 /************************************************ navbar *****************************************/
 
 .navbar-nav {
@@ -56,7 +119,7 @@ body {
 
 /************************ end navbar ********************************/
 header {
-  height: 100opx;
+  height: 1000px;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,14 +402,26 @@ header {
 .hex-2{
   position: absolute;
   top: 145em;
+  width: 1000px;
   left: -10px;
   z-index: -99;
+ 
 }
 
 
                                                /* CHARTS */
+                                               
+                                               
 .chart-section{
-  overflow: hidden;
+  height: 1000px;
+
+}
+.chart-section-2{
+overflow: hidden;
+display: flex;
+height: 900px;
+align-items: center;
+width: 100%;
 }
 .chart-section img{
 z-index: -99;
@@ -358,14 +433,6 @@ top: 80rem;
 
 
 
-.leftchart{
-
-  height: 900px;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
 .chart-heading {
   font-family: "Rubik", sans-serif;
   color: #023047;
@@ -374,18 +441,15 @@ justify-content: center;
   text-align: center;
 }
 
-.chart-container {
-  width: 50%;
-}
+
 
 .programming-stats {
-  height: 50%;
- 
+  height: 500px;
   font-family: "Rubik", sans-serif;
   display: flex;
   align-items: center;
   gap: 24px;
-  justify-content: space-between;
+ 
   margin: 0 auto;
   width: 100%;
   box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.3);
@@ -400,21 +464,40 @@ justify-content: center;
   box-shadow: 0 4px 16px -7px rgba(0, 0, 0, 0.3);
 }
 
-.programming-stats .details ul {
-  list-style: none;
-  padding: 0;
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
 }
 
-.programming-stats .details ul li {
-  font-size: 24px;
-  margin: 12px 0;
-  text-transform: uppercase;
+.legend-container {
+ 
+  
+  display: flex;
+  flex-direction: column;
 }
 
-.programming-stats .details .percentage {
-  font-weight: 700;
-  color: #e63946;
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+.legend-item span{
+  font-size: 30px;
+  width: 200px;
+
+}
+
 
 
 
@@ -423,8 +506,6 @@ path {
   cursor: pointer;
 }
 .rightchart{
- 
-  height: 900px;
   display: flex;
   align-items: center;
 }
@@ -449,33 +530,25 @@ input {
 .chart-content{
   display: flex;
   background-color: #152026;
-  height: 50%;
+  height: 500px;
   align-items: center;
   border-radius: 10px;
 }
 #pieChart {
   /* border: red 1px dotted; */
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 10px;
 }
 
-.text-container {
-  /* border: 1px dotted; */
-  color: #c8c8c8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.text-container{
+ color: #ffffff;
 }
 
-#segmentText {
-  width: 100%;
-  padding: 20px;
-  text-align: centre;
-}
+
+
+
 
 /* responsive */
 @media(max-width: 767px){
@@ -495,10 +568,10 @@ input {
 	}
 }
 
-/* Header */
+/*********************************** Header ********************************/
 @media (max-width: 991px){
   .hero-page{
-    padding-top: 50px;
+    padding-top: 200px;
   }
   .hero-page .hero-content{
     height: 1000px;
@@ -518,6 +591,122 @@ input {
     top:40% ;
 }
 .hero-page .bee img{
-  width: 500px;
+  width: 400px;
 }
+
+
+}
+@media (max-width: 767px) and (min-width:300px){
+  .hero-page h1{
+    font-size: 46px;
+  }
+  .hero-page .bee img{
+    width: 395px;
+  }
+}
+
+@media (max-width: 500px) and (min-width:300px){
+
+  .hero-page .desc-content{
+    width: auto;
+    text-align: center;
+  }
+  .hero-page h1{
+    font-size: 43px;
+    text-align: left;
+  }
+  .hero-page .bee{
+    position: relative;
+    top:40% ;
+}
+.hero-page .bee img{
+  width: 400px;
+}
+
+
+@media (max-width:391px) and (min-width:300px){
+  .hero-page h1{
+    font-size: 40px;
+  }
+}
+}
+@media (max-width: 414px) and (min-width:300px){
+  .hero-page p{
+    font-size: 15px;
+  }
+  
+.hero-page .bee img{
+  width: 350px;
+}
+}
+/*********************************** Header ********************************/
+
+/*********************************** Tokenomics ********************************/
+
+@media screen and (max-width: 1000px) and (min-width:300px){
+  .chart-section{
+    height: auto;
+  }
+  .chart-section-2{
+    height:1100px;
+  padding-top: 0;
+  }
+  .main-chart{
+    width: auto;
+    display: block;
+  
+  }
+  .chart-section .rightchart{
+    width:auto;
+  }
+  .chart-section .leftchart{
+    width: auto;
+  }
+  .my-chart{
+    width: auto;
+  }
+  #pieChart {
+    /* border: red 1px dotted; */
+    width: 40%;
+ 
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .chart-section-2{
+    height: 1100px;
+    align-items: center;
+    display: flex;
+  }
+  .chart-section .rightchart .chart-content{
+   display: flex;
+   flex-direction: column;
+    padding-top: 2em;
+    margin-top: 2em;
+   align-items: center;
+   text-align: center;
+
+  }
+  
+}
+@media (max-width: 500px) and (min-width:300px){
+  .chart-section-2{
+    
+    margin: auto;
+  }
+  .chart-section .rightchart .chart-content{
+   display: flex;
+   flex-direction: column;
+    padding-top: 2em;
+    margin-top: 2em;
+   align-items: center;
+   text-align: center;
+
+  }
+  .chart-section .rightchart{
+    width:auto;
+  }
+  .chart-section .leftchart{
+    width: auto;
+  }
 }
