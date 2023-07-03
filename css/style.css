@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+ 
   text-rendering: optimizeSpeed;
 
   
@@ -224,13 +224,6 @@ header {
 
 /************************ end-Hero-Content ********************************/
 
-.hex img{
-  position: absolute;
-  width: 110%;
-  top: 40%;
-  left:-2%;
-
-}
 
 
 /************************ Animated Background ********************************/
@@ -329,9 +322,9 @@ header {
 
 
 .timeline-section{
-  height: 150%;
+  height: 1500px;
 	padding: 100px 15px;
-  overflow: hidden;
+overflow: hidden;
 }
 .timeline-section h1{
   text-align: center;
@@ -401,23 +394,23 @@ header {
 }
 .hex-2{
   position: absolute;
-  top: 145em;
-  width: 1000px;
+  top: 153em;
+  
   left: -10px;
   z-index: -99;
- 
+
 }
 
 
                                                /* CHARTS */
                                                
-                                               
+                                        
 .chart-section{
   height: 1000px;
-
+  overflow: hidden;
 }
 .chart-section-2{
-overflow: hidden;
+
 display: flex;
 height: 900px;
 align-items: center;
@@ -426,8 +419,7 @@ width: 100%;
 .chart-section img{
 z-index: -99;
  position: absolute;
- overflow: hidden;
- width: 150rem;
+
 top: 80rem;
 }
 
@@ -670,7 +662,12 @@ input {
     width: 40%;
  
   }
-
+  .hex-2{
+    position: absolute;
+    top: 2700px;
+ 
+  
+  }
 }
 @media screen and (max-width: 767px) {
   .chart-section-2{
