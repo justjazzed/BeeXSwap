@@ -13,18 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta&display=swap" rel="stylesheet">
    
 </head>
-<body style=" background: url(./images/bgc-01-01.png);">
-
+<body >
+<!-- 
     <div id="container">
-        <img id="cursor-image" src="./images/bee-cursor-01.png" alt="Cursor Image">
-      </div>    
+        <img id="cursor-image" src="./images/BEE-01.png" alt="Cursor Image">
+      </div>     -->
 
+      <section class="bgc">
+        
+      </section>
 
       <!--------------------------------------------------- HEADER ------------------------------------------------->
-    <header>
+    <header style=" background: url(./images/bgc-01-01.png);">
         
         <!--------------------------------------------------- Navbar ------------------------------------------------->
-
+        
         <nav class="navbar navbar-expand-lg  d-none d-lg-flex ">
         <div class="container ">
           <a class="navbar-brand " href="#"><img src="./images/BeeXSwap.png" style="width: 90px;"></a>
@@ -71,7 +74,7 @@
                                 </div>
                         </div>
                         <div class="col-6 bee">
-                                <img src="./images/BEE-01.png" alt="">
+                                <img src="./images/BEE-01.png" alt="" class="image-fluid">
                         </div>
                     </div>
                 </div>
@@ -132,7 +135,163 @@
          <!--------------------------------------------------- end Animated-Bckground ------------------------------------------------->
       
 
-         <script>document.addEventListener('DOMContentLoaded', function() {
+         <section class="chart-section">
+            <img class="img-fluid" src="./images/2nd hexagon-01.png" alt="">
+            <div class="container">
+                <h1 class="chart-heading">Tokenomicss</h1>
+                <div class="row">
+                    <div class="col-6 leftchart">
+                        <div class="programming-stats">
+                            <div class="chart-container">
+                              <canvas class="my-chart"></canvas>
+                            </div>
+                            <div class="details">
+                              <ul></ul>
+                            </div>
+                          </div>
+                    </div>
+                  
+                        <div class="col-6 rightchart">
+                                    <div class="chart-content">
+                                    <div class="col-sm-6" id="pieChart"></div>
+                                    <div id="pieText" class="col-sm-6 text-container">
+                                        <h1 id="segmentTitle">Select Color</h1>
+                                        <p id="segmentText">Python is a computer programming language often used to build websites and software, 
+                                            automate tasks, and conduct data analysis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+         </section>
+
+ 
+
+         <section class="timeline-section" ;">
+           <div style="z-index: 999999;">
+            <h1 >ROADMAP</h1>
+           </div>
+            <div class="timeline-items">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2015</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h3>timeline item title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hex-2">
+                <img class="img-fluid" src="./images/2ndweb-01.png" alt="">
+            </div>
+
+        </section>
+        <footer class="text-center text-white" style="background-color: #eaa023;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2023 Copyright:
+              <a class="text-dark" href="https://mdbootstrap.com/">Alrights Received</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+        
+
+        
+               
+        document.addEventListener('DOMContentLoaded', function() {
             var cursorImage = document.getElementById('cursor-image');
           
             document.addEventListener('mousemove', function(e) {
@@ -143,6 +302,52 @@
               cursorImage.style.left = x + 'px';
               cursorImage.style.top = y + 'px';
             });
-          });</script>
+          });
+          
+          
+          const chartData = {
+  labels: ["Development", "Marketing", "Liquidity Pool", "Air Drop", "Others"],
+  data: [30, 17, 10, 7, 36],
+};
+
+const myChart = document.querySelector(".my-chart");
+const ul = document.querySelector(".programming-stats .details ul");
+
+new Chart(myChart, {
+  type: "doughnut",
+  data: {
+    labels: chartData.labels,
+    datasets: [
+      {
+        label: "Language Popularity",
+        data: chartData.data,
+      },
+    ],
+  },
+  options: {
+    borderWidth: 10,
+    borderRadius: 2,
+    hoverBorderWidth: 0,
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  },
+});
+
+const populateUl = () => {
+  chartData.labels.forEach((l, i) => {
+    let li = document.createElement("li");
+    li.innerHTML = `${l}: <span class='percentage'>${chartData.data[i]}%</span>`;
+    ul.appendChild(li);
+  });
+};
+
+populateUl();
+          
+          
+          
+          </script>
 </body>
 </html>
